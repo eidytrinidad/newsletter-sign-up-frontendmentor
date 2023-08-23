@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url(./assets/fonts/Roboto-Regular.ttf);
+@import url(./assets/fonts/Roboto-Bold.ttf); */
+@font-face {
+  font-family: "Roboto";
+
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("woff2"),
+    url("./assets/fonts/Roboto-Regular.ttf") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Roboto-Bold";
+
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("woff2"),
+    url("./assets/fonts/Roboto-Bold.ttf") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+:root {
+  --primary-ff: "Roboto";
+  --RobotoBold: "Roboto-Bold";
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --Tomato: hsl(4, 100%, 67%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  font-family: var(-primary-ff);
+  font-size: 16px;
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+  }
 }
