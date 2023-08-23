@@ -10,7 +10,7 @@
   src: url("./assets/fonts/Roboto-Regular.ttf") format("woff2"),
     url("./assets/fonts/Roboto-Regular.ttf") format("woff");
 
-  font-weight: bold;
+  font-weight: 400;
 
   font-style: normal;
 
@@ -54,4 +54,20 @@ html {
   body {
     background-color: hsl(234, 29%, 20%);
   }
+}
+
+.btn-primary {
+  font-family: var(--RobotoBold);
+  background-color: var(--DarkSlateGrey);
+  color: #fff;
+  padding: 14px 0;
+}
+.btn-primary:hover {
+  background-color: var(--Tomato);
+}
+
+
+ .page-title {
+  font-family: var(--RobotoBold);
+  font-size: 40px;
 }

@@ -5,11 +5,6 @@
   color: var(--DarkSlateGrey);
 }
 
-.text-container h1 {
-  font-family: var(--RobotoBold);
-
-  font-size: 40px;
-}
 .text-container p {
   font-family: var(--Roboto);
   font-weight: 500;
@@ -18,6 +13,7 @@
 .list-container li {
   font-family: var(--Roboto);
   font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .form-container label {
@@ -34,12 +30,3 @@
   font-weight: 500;
   font-family: var(--Roboto);
 } */
-.form-container .btn-primary {
-  font-family: var(--RobotoBold);
-  background-color: var(--DarkSlateGrey);
-  color: #fff;
-  padding: 14px 0;
-}
-.form-container .btn-primary:hover {
-  background-color: var(--Tomato);
-}

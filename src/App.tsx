@@ -1,17 +1,9 @@
 import "./App.css";
-import { FormComponent } from "./components/Form/FormComponent";
-import { IlustrationContainer } from "./components/IlustrationComponent/IlustrationContainer";
-import { FormContainerProvider } from "./context/formcontainer/FormContainer.context";
+
+import { Router } from "./routes/Router";
 
 function App() {
-  return (
-    <main className="app-container">
-      <IlustrationContainer />
-      <FormContainerProvider>
-        <FormComponent />
-      </FormContainerProvider>
-    </main>
-  );
+  return <Router />;
 }
 
 export default App;
